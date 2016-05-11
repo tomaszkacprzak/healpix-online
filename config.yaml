@@ -8,20 +8,78 @@ healpix_maps: [
   # mask, all pixels with value >=1 are taken
   filename_mask: /Users/tomek/projects/160127_kappamap/ngal_y1a1_bpz_0.0_0.5_50.0_v1.fits,
   # name of the map
-  tag: im3shape_y1a1_kappaE,
+  tag: DES_Y1A1_im3shape_y1a1_kappaE_1024_smoothing50,
   # colormap, matplotlib or planck-like
-  cmap: 'planck-like'
+  cmap: 'planck-like',
+  clim: [3, 3]
 },
 {
   filename: /Users/tomek/projects/160127_kappamap/kappaB_im3shape_y1a1_bpz_0.5_1.0_50.0_v1.fits,
   filename_mask: /Users/tomek/projects/160127_kappamap/ngal_y1a1_bpz_0.0_0.5_50.0_v1.fits,
-  tag: im3shape_y1a1_kappaB,
-  cmap: 'planck-like'
+  tag: DES_Y1A1_im3shape_y1a1_kappaB_1024_smoothing50,
+  cmap: 'planck-like',
+  clim: [3, 3]
 },
 {
   filename: /Users/tomek/projects/160127_kappamap/ngal_y1a1_bpz_0.0_0.5_50.0_v1.fits,
   filename_mask: /Users/tomek/projects/160127_kappamap/ngal_y1a1_bpz_0.0_0.5_50.0_v1.fits,
-  tag: im3shape_y1a1_ngals,
-  cmap: 'planck-like'
+  tag: DES_Y1A1_im3shape_y1a1_ngals_1024_smoothing50,
+  cmap: 'planck-like',
+  clim: [3, 3]
+},
+# new sims
+{
+  # name of the input fits file
+  filename: /Users/tomek/projects/160127_kappamap/from_chihway/kappaE_im3shape_y1a1_bpz_0.5_1.0_10.0_v1.fits,
+  # mask, all pixels with value >=1 are taken
+  filename_mask: /Users/tomek/projects/160127_kappamap/from_chihway/ngal_y1a1_bpz_0.0_0.5_10.0_v1.fits,
+  # name of the map
+  tag: DES_Y1A1_im3shape_y1a1_kappaE_1024_smoothing10,
+  # colormap, matplotlib or planck-like
+  cmap: 'planck-like',
+  clim: [3, 3]
+},
+{
+  filename: /Users/tomek/projects/160127_kappamap/from_chihway/kappaB_im3shape_y1a1_bpz_0.5_1.0_10.0_v1.fits,
+  filename_mask: /Users/tomek/projects/160127_kappamap/from_chihway/ngal_y1a1_bpz_0.0_0.5_10.0_v1.fits,
+  tag: DES_Y1A1_im3shape_y1a1_kappaB_1024_smoothing10,
+  cmap: 'planck-like',
+  clim: [3, 3]
+},
+{
+  filename: /Users/tomek/projects/160127_kappamap/from_chihway/ngal_y1a1_bpz_0.0_0.5_10.0_v1.fits,
+  filename_mask: /Users/tomek/projects/160127_kappamap/from_chihway/ngal_y1a1_bpz_0.0_0.5_10.0_v1.fits,
+  tag: DES_Y1A1_im3shape_y1a1_ngals_1024_smoothing10,
+  cmap: 'planck-like',
+  clim: [3, 3]
+},
+{
+  filename: /Users/tomek/projects/160127_kappamap/from_chihway/seeing_y1a1.fits,
+  filename_mask: /Users/tomek/projects/160127_kappamap/from_chihway/ngal_y1a1_bpz_0.0_0.5_10.0_v1.fits,
+  tag: DES_Y1A1_seeing_y1a1.fits,
+  cmap: 'planck-like',
+  clim: [3, 3]
+},
+{
+  filename: /Users/tomek/projects/160127_kappamap/from_chihway/depth_y1a1.fits,
+  filename_mask: /Users/tomek/projects/160127_kappamap/from_chihway/ngal_y1a1_bpz_0.0_0.5_10.0_v1.fits,
+  tag: DES_Y1A1_depth_y1a1.fits,
+  cmap: 'planck-like',
+  clim: [3, 3]
+},
+{
+  filename: /Users/tomek/projects/160127_kappamap/from_chihway/airmass_y1a1.fits,
+  filename_mask: /Users/tomek/projects/160127_kappamap/from_chihway/ngal_y1a1_bpz_0.0_0.5_10.0_v1.fits,
+  tag: DES_Y1A1_airmass_y1a1.fits,
+  cmap: 'planck-like',
+  clim: [3, 3]
+},
+{
+  filename: /Users/tomek/projects/160215_des_map/test.m_ap.im3shape.fits,
+  filename_mask: /Users/tomek/projects/160215_des_map/test.n_gals.im3shape.fits,
+  tag: DES_Y1A1_aperture_mass_map_im3shape_filter20_2048.fits,
+  cmap: 'planck-like',
+  clim: [3, 3]
 }
+
 ]

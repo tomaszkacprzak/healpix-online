@@ -1,0 +1,56 @@
+<HTML>
+<HEAD>
+   <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+   <link rel="stylesheet" href="http://aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.css" >
+   <script type="text/javascript">var jqMenu = jQuery.noConflict();</script>
+   <script type="text/javascript">
+var hipsDir=null;</script>
+</HEAD>
+<center><H1>DES Y1A1 maps comparison</H1></center>
+<script type="text/javascript">
+hipsDir = location.href;
+hipsDir = hipsDir.substring(0,hipsDir.lastIndexOf("/",hipsDir.length));
+document.getElementById("hipsBase").innerHTML=hipsDir;
+</script>
+<TABLE align=center>
+<TR>
+<TD>
+<script type="text/javascript" src="http://aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.js" charset="utf-8"></script>
+<div id="aladin-lite-div" style="width:600px;height:600px;"></div>
+<script type="text/javascript">
+var hipsDir = location.href;
+hipsDir = hipsDir.substring(0,hipsDir.lastIndexOf("/",hipsDir.length));
+var aladin = $.aladin("#aladin-lite-div", {showFrame: false, showGotoControl: false});
+// var hipsDir1 = hipsDir.concat('/kappaE');
+// var hipsDir2 = hipsDir.concat('/kappaB');
+// var survey1 = aladin.createImageSurvey('KappaE', 'KappaE', hipsDir1, 'equatorial', 3, {imgFormat: 'png'})
+// var survey2 = aladin.createImageSurvey('KappaB', 'KappaB', hipsDir2, 'equatorial', 3, {imgFormat: 'png'})
+$INSERT_MAP_CODE_HERE$
+aladin.setImageSurvey(survey1);
+</script>
+</TD>
+
+<TD>
+<script type="text/javascript" src="http://aladin.u-strasbg.fr/AladinLite/api/v2/latest/aladin.min.js" charset="utf-8"></script>
+<div id="aladin-lite-div-2" style="width:600px;height:600px;"></div>
+<script type="text/javascript">
+var hipsDir = location.href;
+hipsDir = hipsDir.substring(0,hipsDir.lastIndexOf("/",hipsDir.length));
+var aladin2 = $.aladin("#aladin-lite-div-2", {showFrame: false, showGotoControl: false});
+// var hipsDir1 = hipsDir.concat('/kappaE');
+// var hipsDir2 = hipsDir.concat('/kappaB');
+// var survey1 = aladin.createImageSurvey('KappaE', 'KappaE', hipsDir1, 'equatorial', 3, {imgFormat: 'png'})
+// var survey2 = aladin.createImageSurvey('KappaB', 'KappaB', hipsDir2, 'equatorial', 3, {imgFormat: 'png'})
+$INSERT_MAP_CODE_HERE_2$
+aladin2.setImageSurvey(survey2);
+</script>
+</TD>
+
+</TR>
+</TABLE>
+<HR>
+<center><I>Made by: Chihway Chang, Tomasz Kacprzak, DES Collaboration<A></I></center>
+<script type="text/javascript">
+document.getElementById("hipsBase").innerHTML=hipsDir;
+</script>
+</HTML>
