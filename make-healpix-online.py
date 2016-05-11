@@ -137,7 +137,7 @@ def make_all_maps(config):
 
 def main():
 
-    description = 'make-healpix-online'
+    description = 'make-healpix-online, see config.yaml for description of input'
     parser = argparse.ArgumentParser(description=description, add_help=True)
     parser.add_argument('-v', '--verbosity', type=int, action='store', default=2, choices=(0, 1, 2, 3 ), help='integer verbosity level: min=0, max=3 [default=2]')
     parser.add_argument('-c', '--config', type=str, default='config.yaml' , action='store', help='filename of file containing config')

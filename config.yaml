@@ -1,10 +1,15 @@
 results_dirname: 'test-hmo'
 
+# list of maps to include on website
 healpix_maps: [
 {
+  # name of the input fits file
   filename: /Users/tomek/projects/160127_kappamap/kappaE_im3shape_y1a1_bpz_0.5_1.0_50.0_v1.fits,
+  # mask, all pixels with value >=1 are taken
   filename_mask: /Users/tomek/projects/160127_kappamap/ngal_y1a1_bpz_0.0_0.5_50.0_v1.fits,
+  # name of the map
   tag: im3shape_y1a1_kappaE,
+  # colormap, matplotlib or planck-like
   cmap: 'planck-like'
 },
 {
