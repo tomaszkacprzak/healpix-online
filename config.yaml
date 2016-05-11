@@ -1,0 +1,22 @@
+results_dirname: 'test-hmo'
+
+healpix_maps: [
+{
+  filename: /Users/tomek/projects/160127_kappamap/kappaE_im3shape_y1a1_bpz_0.5_1.0_50.0_v1.fits,
+  filename_mask: /Users/tomek/projects/160127_kappamap/ngal_y1a1_bpz_0.0_0.5_50.0_v1.fits,
+  tag: im3shape_y1a1_kappaE,
+  cmap: 'planck-like'
+},
+{
+  filename: /Users/tomek/projects/160127_kappamap/kappaB_im3shape_y1a1_bpz_0.5_1.0_50.0_v1.fits,
+  filename_mask: /Users/tomek/projects/160127_kappamap/ngal_y1a1_bpz_0.0_0.5_50.0_v1.fits,
+  tag: im3shape_y1a1_kappaB,
+  cmap: 'planck-like'
+},
+{
+  filename: /Users/tomek/projects/160127_kappamap/ngal_y1a1_bpz_0.0_0.5_50.0_v1.fits,
+  filename_mask: /Users/tomek/projects/160127_kappamap/ngal_y1a1_bpz_0.0_0.5_50.0_v1.fits,
+  tag: im3shape_y1a1_ngals,
+  cmap: 'planck-like'
+}
+]
