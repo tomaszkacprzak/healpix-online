@@ -6,7 +6,7 @@
    <script type="text/javascript">
 var hipsDir=null;</script>
 </HEAD>
-<center><H1>DES Y1A1 mass map</H1></center>
+<center><H1>DES Y1A1 maps</H1></center>
 <script type="text/javascript">
 hipsDir = location.href;
 hipsDir = hipsDir.substring(0,hipsDir.lastIndexOf("/",hipsDir.length));
@@ -20,7 +20,7 @@ document.getElementById("hipsBase").innerHTML=hipsDir;
 <script type="text/javascript">
 //var hipsDir = location.href;
 //hipsDir = hipsDir.substring(0,hipsDir.lastIndexOf("/",hipsDir.length));
-var aladin = $.aladin("#aladin-lite-div");
+var aladin = $.aladin("#aladin-lite-div", {showFrame: false, showGotoControl: false});
 // var hipsDir1 = hipsDir.concat('/kappaE');
 // var hipsDir2 = hipsDir.concat('/kappaB');
 // var survey1 = aladin.createImageSurvey('KappaE', 'KappaE', hipsDir1, 'equatorial', 3, {imgFormat: 'png'})
